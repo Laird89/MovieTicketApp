@@ -4,6 +4,15 @@ First assignment for Mobile Web Development
 
 September 27, 2023
 
+Browser Look <br>
+
+<img width="773" alt="Assignment1Browser" src="https://github.com/Laird89/MovieTicketApp/assets/117320855/8da312cf-9415-4592-9350-c33f6251d23f">
+
+Mobile Look <br>
+
+<img width="323" alt="TicketAppFull" src="https://github.com/Laird89/MovieTicketApp/assets/117320855/ad234060-478e-4b16-bed2-93011620de88">
+
+
 # Movie Ticket App
 
 The **Ticket Purchase Web Application** is a user-friendly, interactive web-based platform designed to facilitate the seamless purchase of event tickets. The application enables users to select their city, theater, movie, date, showtime, and enter their personal information to complete the ticket purchase. It's a comprehensive solution for handling ticket transactions.
