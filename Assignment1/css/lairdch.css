@@ -1,0 +1,347 @@
+#content {
+  /* border: 5px solid; */
+  margin: auto;
+  width: 75%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  /*width: 190px;*/
+  /* height: 254px; */
+  background: white;
+  border-radius: 10px;
+  transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.shadow {
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(190, 190, 190),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.header {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #fff6e0;
+  width: 400px;
+  padding: 12px;
+  background: #272829;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px -3px #111;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+#ticketImage {
+  width: 250px;
+  height: 250px;
+  grid-area: ticketImage;
+  margin: auto;
+  margin-bottom: -50px;
+}
+
+.form label {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.form input {
+  font: inherit;
+  padding: 0.35rem 0.35rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.footer {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #fff6e0;
+  width: 600px;
+  padding: 12px;
+  background: #272829;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px -3px #111;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "ticketImage ticketImage ticketImage"
+    "cLabel tLabel ."
+    "city location location"
+    "mLabel dLabel tickLabel"
+    "movies date tickets"
+    "sLabel . ."
+    "showtimes showtimes showtimes"
+    "fLabel lLabel ."
+    "firstName lastName lastName"
+    "eLabel gLabel aLabel"
+    "email gender age"
+    ". . totalLabel"
+    ". . total"
+    "submit submit submit";
+  /* padding: 1.2em; */
+  grid-gap: 0.8em 0.5em;
+  /* width: 30em; */
+  margin: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+#cLabel {
+  grid-area: cLabel;
+}
+
+#city {
+  grid-area: city;
+}
+
+#tLabel {
+  grid-area: tLabel;
+}
+
+#location {
+  grid-area: location;
+}
+
+#mLabel {
+  grid-area: mLabel;
+}
+
+#movies {
+  grid-area: movies;
+}
+
+#dLabel {
+  grid-area: dLabel;
+}
+
+#date {
+  grid-area: date;
+}
+
+#tickLabel {
+  grid-area: tickLabel;
+}
+
+#tickets {
+  grid-area: tickets;
+}
+
+#sLabel {
+  grid-area: sLabel;
+}
+
+#showtimes {
+  grid-area: showtimes;
+}
+
+#fLabel {
+  grid-area: fLabel;
+}
+
+#firstName {
+  grid-area: firstName;
+}
+
+#lLabel {
+  grid-area: lLabel;
+}
+
+#lastName {
+  grid-area: lastName;
+}
+
+#eLabel {
+  grid-area: eLabel;
+}
+
+#email {
+  grid-area: email;
+}
+
+#gLabel {
+  grid-area: gLabel;
+}
+
+#gender {
+  grid-area: gender;
+}
+
+#aLabel {
+  grid-area: aLabel;
+}
+
+#age {
+  grid-area: age;
+}
+
+#totalLabel {
+  grid-area: totalLabel;
+}
+
+#total {
+  grid-area: total;
+}
+
+#submit {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
+  box-sizing: border-box;
+  color: #121212;
+  cursor: pointer;  
+  outline: none;  
+  justify-content: center; 
+  border: 0;
+  text-align: center;
+  font-size: 1rem;
+  font-family: Inter,sans-serif;
+  margin: auto;
+  grid-area: submit;
+}
+
+#submit:hover {
+box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+}
+
+
+@media (max-width: 480px) {
+  .form {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas:
+      "ticketImage"
+      "cLabel"
+      "city"
+      "tLabel"
+      "location"
+      "mLabel"
+      "movies"
+      "dLabel"
+      "date"
+      "tickLabel"
+      "tickets"
+      "sLabel"
+      "showtimes"
+      "fLabel"
+      "firstName"
+      "lLabel"
+      "lastName"
+      "eLabel"
+      "email"
+      "gLabel"
+      "gender"
+      "aLabel"
+      "age"
+      "totalLabel"
+      "total"
+      "submit";
+    /* padding: 1.2em; */
+    grid-gap: 0.8em 0.5em;
+    /* width: 30em; */
+    margin: auto;
+  }
+
+  .header {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    color: #fff6e0;
+    width: 200px;
+    padding: 12px;
+    background: #272829;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px -3px #111;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .footer {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    color: #fff6e0;
+    width: 200px;
+    padding: 12px;
+    background: #272829;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px -3px #111;
+    margin: auto;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .form {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas:
+      "ticketImage"
+      "cLabel"
+      "city"
+      "tLabel"
+      "location"
+      "mLabel"
+      "movies"
+      "dLabel"
+      "date"
+      "tickLabel"
+      "tickets"
+      "sLabel"
+      "showtimes"
+      "fLabel"
+      "firstName"
+      "lLabel"
+      "lastName"
+      "eLabel"
+      "email"
+      "gLabel"
+      "gender"
+      "aLabel"
+      "age"
+      "totalLabel"
+      "total"
+      "submit";
+    /* padding: 1.2em; */
+    grid-gap: 0.8em 0.5em;
+    /* width: 30em; */
+    margin: auto;
+  }
+
+  .header {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    color: #fff6e0;
+    width: 200px;
+    padding: 12px;
+    background: #272829;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px -3px #111;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .footer {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    color: #fff6e0;
+    width: 200px;
+    padding: 12px;
+    background: #272829;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px -3px #111;
+    margin: auto;
+    margin-top: 20px;
+  }
+}

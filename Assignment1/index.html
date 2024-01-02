@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/lairdch.css" rel="stylesheet" />
+    <script src="scripts/lairdch.js"></script>
+    <title>lairdch-991279847</title>
+  </head>
+  <body onload="updatePage()">
+    <header id="header"></header>
+    <div id="content" class="card shadow">
+
+      <form class="form">      
+        <img src="images/movieTicket2.jpg" id="ticketImage">
+
+        <label id="cLabel">City</label>
+        <select id="city" onchange="setLocations()"></select>
+
+        <div id="location" class="hidden">
+            <label id="tLabel">Theatre Location: </label>
+            
+        </div>
+
+        <label id="mLabel">Movies Playing</label>
+        <select id="movies"></select>
+
+        <label id="dLabel">Date</label>
+        <input type="date" id="date" required />
+
+        <label id="tickLabel">Number of Tickets</label>
+        <input type="number" id="tickets" required onchange="updateTotalPrice()" />
+
+        <label id="sLabel">Showtimes</label>
+        <select id="showtimes" required></select>
+
+        <label id="fLabel">First Name</label>
+        <input type="text" id="firstName" required />
+
+        <label id="lLabel">Last Name</label>
+        <input type="text" id="lastName" required />
+
+        <label id="eLabel">Email</label>
+        <input type="email" id="email" required />
+
+        <label id="gLabel">Gender</label>
+        <input type="text" id="gender" required />
+
+        <label id="aLabel">Age</label>
+        <input type="number" id="age" required onchange="ageCheck()" />
+
+        <label id="totalLabel">Total Cost</label>
+        <p id="total"></p>
+
+        <input type="submit" id="submit" value="Purchase Ticket" onclick="showPurchaseSummary(event)" />
+      </form>
+    </div>
+    <footer id="footer"></footer>
+  </body>
+</html>
